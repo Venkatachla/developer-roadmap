@@ -35,6 +35,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
 - [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
 - [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
+- [DevSecOps Roadmap](https://roadmap.sh/devsecops)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
 - [HTML Roadmap](https://roadmap.sh/html)
 - [CSS Roadmap](https://roadmap.sh/css)
@@ -70,6 +71,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Node.js Roadmap](https://roadmap.sh/nodejs)
 - [PHP Roadmap](https://roadmap.sh/php)
+- [Wordpress Roadmap](https://roadmap.sh/wordpress)
+- [Laravel Roadmap](https://roadmap.sh/laravel)
 - [GraphQL Roadmap](https://roadmap.sh/graphql)
 - [Android Roadmap](https://roadmap.sh/android)
 - [iOS Roadmap](https://roadmap.sh/ios)
@@ -82,6 +85,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
+- [ElasticSearch Roadmap](https://roadmap.sh/elasticsearch)
 - [SQL Roadmap](https://roadmap.sh/sql)
 - [Redis Roadmap](https://roadmap.sh/redis)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
@@ -132,16 +136,16 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 Clone the repository, install the dependencies and start the application
 
 ```bash
-git clone git@github.com:kamranahmedse/developer-roadmap.git
+git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
 cd developer-roadmap
-npm install
-npm run dev
+pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
+pnpm install
 ```
 
-Note: use the `depth` parameter to reduce the clone size and speed up the clone.
+Run the development server with:
 
-```sh
-git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
+```bash
+pnpm dev
 ```
 
 ## Contribution
